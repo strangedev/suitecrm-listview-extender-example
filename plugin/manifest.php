@@ -26,12 +26,18 @@ $manifest = array(
     'name' => 'SuiteCRM plugin',
     'published_date' => '2019',
     'type' => 'module',
-    'version' => 'v0.0.1',
+    'version' => 'v0.0.2',
     'remove_tables' => false
 );
 
 $installdefs = array(
-    'id' => 'plugin'
+    'id' => 'plugin',
+    'copy' => array(
+        array(
+            'from' => '<basepath>/view.list.d/leads.php',
+            'to' => 'custom/modules/Leads/views/view.list.d/example.php'
+        )
+    )
 );
 
 $upgrade_manifest = array();

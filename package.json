@@ -13,9 +13,9 @@
   "scripts": {
     "clean": "rm -rf build",
     "mkdir-build": "yarn run clean && mkdir -p build/sdist",
-    "copy-sources": "yarn run mkdir-build && cp -r plugin/*.php build/sdist/",
-    "render-templates": "mustache plugin/modules.json plugin/manifest.mustache > build/sdist/manifest.php",
-    "pack-plugin": "yarn run copy-sources && yarn run render-templates && zip -jr build/plugin.zip build/sdist/*",
+    "copy-sources": "yarn run mkdir-build && cp -r ./plugin/* build/sdist/",
+    "render-templates": "echo 'No templates to render'",
+    "pack-plugin": "yarn run copy-sources && yarn run render-templates && cd build/sdist && zip -r ../plugin.zip ./*",
     "build": "yarn run pack-plugin"
   }
 }
