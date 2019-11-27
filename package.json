@@ -1,6 +1,6 @@
 {
   "name": "suitecrm-plugin",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "Tools for building",
   "main": "none",
   "repository": "git@github.com:strangedev/suitecrm-plugin.git",
