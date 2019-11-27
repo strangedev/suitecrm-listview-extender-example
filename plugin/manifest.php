@@ -26,7 +26,7 @@ $manifest = array(
     'name' => 'SuiteCRM plugin',
     'published_date' => '2019',
     'type' => 'module',
-    'version' => 'v0.0.3',
+    'version' => 'v0.0.4',
     'remove_tables' => false
 );
 
